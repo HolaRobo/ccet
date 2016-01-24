@@ -1,0 +1,81 @@
+﻿.MainForm_top .new
+{
+	float: left;
+	width: 500px;
+}
+.MainForm_top .new .title
+{
+	height:30px;
+	line-height:30px;
+	font-weight:bold;
+	font-size:16px;
+	text-indent:2em;
+	border-bottom:dashed 1px #999;
+}
+.MainForm_top .image
+{
+	float: right;
+	margin-right: 10px;
+	border: 2px solid #999;
+}
+.MainForm_top .new ul
+{
+	margin: 20px 20px;
+}
+.MainForm_top .new li
+{
+	height: 30px;
+	color: #B32D00;
+	list-style-type:circle;
+}
+.MainForm_top .new li a
+{
+	font-size: 12px;
+	color: #666;
+	text-decoration: none;
+}
+
+.MainForm_top .new li a:hover
+{
+	color: #36F;
+	text-decoration: underline;
+}
+.MainForm_top li .span1
+{
+	float: right;
+}
+
+.MainForm_bottom
+{
+	background: url("../img/f_bj_topbc.jpg") no-repeat;
+	height: 35px;
+	line-height: 35px;
+	position: relative;
+}
+
+
+.MainForm_bottom li
+{
+	float: left;
+	background: url("../img/nav_li.gif")  0 2px no-repeat;
+	width: 84px;
+	text-align: center;
+	position: relative;
+	height:35px;
+	padding-left: 4px;
+}
+.MainForm_bottom li a
+{
+	color: white;
+	display: block;
+	_display: inline-block;
+	height: 31px;
+	text-align: center;
+	font-weight:bold;
+}
+.MainForm_bottom li a:hover, .menu li.up a
+{
+	background: url("../img/this_one.jpg") no-repeat center 0;
+	text-decoration: none;
+}
+

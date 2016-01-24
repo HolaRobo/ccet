@@ -1,0 +1,142 @@
+﻿.paginator
+{
+	font: 12px Arial, Helvetica, sans-serif;
+	padding: 10px 20px 10px 0;
+	margin: 0px auto;
+}
+.paginator a
+{
+	border: solid 1px #ccc;
+	color: #0063dc;
+	cursor: pointer;
+	text-decoration: none;
+}
+.paginator a:visited
+{
+	padding: 1px 6px;
+	border: solid 1px #ddd;
+	background: #fff;
+	text-decoration: none;
+}
+.paginator .cpb
+{
+	border: 1px solid #F50;
+	font-weight: 700;
+	color: #F50;
+	background-color: #ffeee5;
+}
+.paginator a:hover
+{
+	border: solid 1px #F50;
+	color: #f60;
+	text-decoration: none;
+	background: #A5151C;
+}
+.paginator a, .paginator a:visited, .paginator .cpb, .paginator a:hover
+{
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	min-width: 10px;
+	_width: 10px;
+	margin-right: 5px;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: Arial,SimSun;
+	padding: 0 3px;
+}
+.warp_top
+{
+	height:45px;
+}
+.reply_w
+{
+	padding:10px;
+	border:1px solid #CCC;
+	margin:10px;
+}
+.reply_w p
+{
+	line-height:200%;
+}
+.reply_w .p_Tea
+{
+	color:Red;
+}
+.reply_w  span
+{
+ float:right;
+}
+.ReplyList_reply
+{
+	margin-top:20px;
+}
+.meReply_content
+{
+	padding:10px;
+	position:relative;
+}
+.reply_warp
+{
+	border:1px solid #CCC;
+	margin-top:15px;
+	padding-bottom:10px;
+}
+.reply_warp .reply_title
+{
+	
+	height: 33px;
+	line-height: 33px;
+	color: #666;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 1em;
+	position:relative;
+	background:#F2F2F2;
+	border:#CCC solid 1px;
+}
+
+/*按钮样式2*/
+.btnClass2
+{
+	border: 0px;
+	cursor: pointer;
+	width: 100px;
+	height: 35px;
+	background: url("../img/login_btn.gif");
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+.btnClass2:hover
+{
+	background-position: 0 -35px;
+}
+/*文本框样式*/
+.txtClass
+{
+	width: 216px;
+	height: 20px;
+	background: transparent url("../img/textboxcc.jpg") no-repeat;
+	border: none;
+	color: #747862;
+	padding: 4px 8px;
+	margin-bottom: 0px;
+}
+.p_admin
+{
+	color:Green;
+}
+.p_adminReply
+{
+	color:#999;
+	font-size:14px;
+}
+.p_ReplyCon
+{
+	border-bottom:#CCC dashed 1px;
+	margin:10px auto;
+	padding-bottom:5px;
+}

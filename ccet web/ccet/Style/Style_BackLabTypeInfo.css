@@ -1,0 +1,171 @@
+﻿.paginator
+{
+	font: 12px Arial, Helvetica, sans-serif;
+	padding: 10px 20px 10px 0;
+	margin: 0px;
+}
+.paginator a
+{
+	border: solid 1px #ccc;
+	color: #0063dc;
+	cursor: pointer;
+	text-decoration: none;
+}
+.paginator a:visited
+{
+	padding: 1px 6px;
+	border: solid 1px #ddd;
+	background: #fff;
+	text-decoration: none;
+}
+.paginator .cpb
+{
+	border: 1px solid #F50;
+	font-weight: 700;
+	color: #F50;
+	background-color: #ffeee5;
+}
+.paginator a:hover
+{
+	border: solid 1px #F50;
+	color: #f60;
+	text-decoration: none;
+	background: #A5151C;
+}
+.paginator a, .paginator a:visited, .paginator .cpb, .paginator a:hover
+{
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	min-width: 10px;
+	_width: 10px;
+	margin-right: 5px;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: Arial,SimSun;
+	padding: 0 3px;
+}
+.BackLabInfo_top
+{
+	height: 40px;
+	color: #333;
+	font-size: 14px;
+	padding-left: 20px;
+	width: 700px;
+	vertical-align: middle;
+}
+.BackLabInfo_top .top_left
+{
+	float: left;
+}
+.BackLabInfo_top .top_right
+{
+	float: left;
+}
+.BackLabInfo_center
+{
+	height:320px;
+}
+.BackLabInfo_center table th
+{
+	color: #ff6600;
+	border-right: 1px solid #f9ddaf;
+	border-bottom: 1px solid #f9ddaf;
+	border-top: 1px solid #f9ddaf;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url("../img/table_head.gif") repeat-x;
+	width: 120px;
+}
+.BackLabInfo_center table th.nobg
+{
+	border-left: 1px solid #f9ddaf;
+}
+.BackLabInfo_center table td
+{
+	border-right: 1px solid #f9ddaf;
+	border-bottom: 1px solid #f9ddaf;
+	padding: 6px 6px 6px 12px;
+	color: #57777F;
+	text-align: center;
+}
+.BackLabInfo_center table td.spec
+{
+	border-left: 1px solid #f9ddaf;
+	border-top: 0;
+	background: #fff url("../img//bullet1.gif") no-repeat;
+}
+.BackLabInfo_center table td .btnclass
+{
+	border: 1px solid #f9ddaf;
+	height: 22px;
+	width: 44px;
+	text-align: center;
+	cursor: pointer;
+}
+.BackLabInfo_center table td .btnclass:hover
+{
+	border: 2px solid #F5C87F;
+}
+.btnSearch
+{
+	width: 71px;
+	height: 29px;
+	border: 0px;
+	cursor: pointer;
+	background: url("../img/btn_bg.jpg") -342px 0;
+	color: #D63600;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.txtLabName
+{
+	height:26px;
+	border:1px solid #999;
+	line-height:26px;
+	width:150px;
+	background:#FFF;
+}
+.BackLabInfo_bottom
+{
+	text-align:left;
+	margin-top:10px;
+	border:1px dashed #D68B0A;
+	padding:10px;
+	width:720px;
+	line-height:40px;
+	font-size:14px;
+}
+
+.BackLabInfo_bottom .SelectLabType
+{
+	height: 30px;
+	width: 150px;
+	color: #999;
+	font-size: 14px;
+}
+.BackLabInfo_bottom .btnSave
+{
+	border:1px solid #377DF6;
+	background:#CADCFC;
+	width:60px;
+	height:24px;
+	text-align:center;
+	font-size:14px;
+	cursor:pointer;
+}
+.BackLabInfo_bottom .btnSave:hover
+{
+	border:2px solid #0A55D6;
+}
+.txtLabTypeName
+{
+	height:24px;
+	line-height:24px;
+	width:180px;
+}

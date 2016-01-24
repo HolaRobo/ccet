@@ -1,0 +1,104 @@
+﻿
+.paginator
+{
+	color: #999;
+	margin:10px auto;
+}
+.paginator a, .paginator .cpb
+{
+	text-decoration: none;
+	float: left;
+	padding: 0 5px;
+	border: 1px solid #ddd;
+	background: #ffff;
+	margin: 0 2px;
+	font-size: 11px;
+	color: #000;
+}
+.paginator a:hover
+{
+	background-color: #E61636;
+	color: #fff;
+	border: 1px solid #E61636;
+	text-decoration: none;
+}
+.paginator .cpb
+{
+	font-weight: bold;
+	color: #fff;
+	background: #E61636;
+	border: 1px solid #E61636;
+}
+.foremaster_content
+{
+	margin:0;
+	padding:0;
+}
+.BackUserInfo_warp
+{
+	width:940px;
+	margin: 25px auto;
+}
+.BackUserInfo_right
+{
+	width:940px;
+	border: 1px solid #999933;
+	margin:0 auto;
+}
+.BackUserInfo_right table
+{
+	margin:0px auto;
+}
+.BackUserInfo_right table th
+{
+	background:#CCC;
+	text-indent:1em;
+	height:30px;
+}
+.BackUserInfo_right table tr
+{
+	height:28px;
+}
+.BackUserInfo_right table td
+{
+	border:1px solid #999;
+	padding:1px;
+	text-align:center;
+	border-top:0px;
+	border-right:0;
+}
+.BackUserInfo_right table .td_right
+{
+	border-right:1px solid #999;
+	width:60px;
+}
+.BackUserInfo_right table td input
+{
+	border:1px solid #B3C7FF;
+	background:#E5ECFF;
+	width:40px;
+	height:20px;
+	cursor:pointer;
+	text-align:center;
+	
+}
+.BackUserInfo_right table td input:hover
+{
+	border:2px solid #80A2FF;
+}
+.BackUserInfo_top,.BackUserInfo_bottom
+{
+	height:30px;
+	background:url("../img/templatemo_menu_bg.png") repeat-x;
+	width: 100%;
+	border: 1px solid #999933;
+	text-indent:2em;
+	color:#FFF;
+	line-height:30px;
+	font-weight:bold;
+	font-size:16px;
+}
+.td_content
+{
+	font-size:12px;
+}

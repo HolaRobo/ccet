@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BackMaster.master.cs"
+    Inherits="LabManage.Masters.BackMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<title>实验中心-后台管理</title>
+    <script type="text/javascript" language="javascript" src="Script/jquery-1.4.4.js"></script>
+<link href="Style/Style_BackMaster.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form runat="server">
+<div class="top_img" align="right">
+<a href="../MainForm.aspx" class="backHome">返回首页</a>
+</div>
+<div class="mid">
+  <div class="left">
+    <div class="left1">
+	   <div class="left_te1"><img src="img/left1_03.jpg" alt=""/></div>
+	   <div class="left_te2" align="center">功能菜单</div>
+	   <div class="left_te3"><img src="img/left1_07.jpg" alt=""/></div>
+	   <div style=" clear:both"></div>
+	</div>
+	
+	<div class="left2">
+	  <div class="left2_1"><img src="img/left2_01.jpg" alt=""/></div>
+	  <div class="left2_2">
+	     <ul>
+		   <li><span>基本</span></li>
+		   <li><a href="CreateNoticeNews.aspx?CreateORUpdate=Create">发布新闻公告</a></li>
+		   <li><a href="CreateNoticeNews.aspx?CreateORUpdate=Create">发布示范中心公告</a></li>
+		   <li><a  href="BackNoticeNewsList.aspx">新闻公告维护</a></li>
+		   <li><a href="BackTeacherAppointment.aspx">教师预约</a></li>
+		   <li><a href="BackTeacherInfo.aspx">教师信息</a></li>
+		   <li><a href="BackAddTeacher.aspx">新增教师</a></li>
+		    <li><a href="BackLabInfo.aspx">实验室管理</a></li>
+		    <li><a href="BackLabTypeInfo.aspx">实验室类型维护</a></li>
+		    <li><a href="BackLeaveMessage.aspx">留言信息</a></li>
+		   
+		 </ul>
+		 <ul>
+		   <li><span>信息维护</span></li>
+		   <li><a href="BackPublicPage.aspx?Command=CenterAbstruct">中心简介</a></li>
+		   <li><a href="BackPublicPage.aspx?Command=CenterTeam">中心队伍</a></li>
+		   <li><a href="BackSystemAndSafety.aspx?Command=System">管理制度</a></li>
+		   <li><a href="BackPublicPage.aspx?Command=DevelopPlan">发展规划</a></li>
+		    <li><a href="BackDrviceMaintenance.aspx">设备的运行于维护</a></li>
+		   <li><a href="BackSystemAndSafety.aspx?Command=Safety">环境与安全</a></li>
+		   <li><a href="BackPublicPage.aspx?Command=StudentResult">学生学习成果</a></li>
+		   <li><a href="BackPublicPage.aspx?Command=TeacherResult">实验教学成果</a></li>
+		 </ul>
+		  <ul>
+		   <li><span>资源下载</span></li>
+		   <li><a href="BackResourceDown.aspx">资源下载</a></li>
+		 </ul>
+		 <ul>
+		   <li><span>系统</span></li>
+		   <li><a href="BackUpdAdminPwd.aspx">修改我的密码</a></li>
+		 </ul>
+	  </div>
+	  <div class="left2_1"><img src="img/left2_02.jpg" alt=""/></div>
+	</div>
+  </div>
+  
+  <div class="right">
+    <div class="right1" id="backMaster_right1"> </div>
+	<div class="right2" align="center">
+	    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div style="clear:both"></div>
+	</div>
+	<div class="right3"><img src="img/right_b_03.jpg" alt=""/></div>
+  </div>
+</div>
+</form>
+</body>
+</html>

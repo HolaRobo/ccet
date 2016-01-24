@@ -1,0 +1,10 @@
+H:\GraduateJob\NetworkCourse\bin\GraduateJob.dll
+H:\GraduateJob\NetworkCourse\bin\GraduateJob.pdb
+H:\GraduateJob\NetworkCourse\obj\Debug\ResolveAssemblyReference.cache
+H:\GraduateJob\NetworkCourse\obj\Debug\GraduateJob.dll
+H:\GraduateJob\NetworkCourse\obj\Debug\GraduateJob.pdb
+H:\GraduateJob\GraduateJob\bin\GraduateJob.dll
+H:\GraduateJob\GraduateJob\bin\GraduateJob.pdb
+H:\GraduateJob\GraduateJob\obj\Debug\ResolveAssemblyReference.cache
+H:\GraduateJob\GraduateJob\obj\Debug\GraduateJob.dll
+H:\GraduateJob\GraduateJob\obj\Debug\GraduateJob.pdb

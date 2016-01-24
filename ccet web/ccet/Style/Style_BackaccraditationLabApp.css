@@ -1,0 +1,75 @@
+﻿.BackaccraditationLabApp_top
+{
+	color:#D18710;
+	font-size:28px;
+	text-indent:1em;
+	border-bottom:2px solid #EFA125;
+	height:50px;
+	line-height:150%;
+}
+.mytable tr
+{
+	height:40px;
+}
+.mytable tr td
+{
+	padding:10px;
+}
+.mytable tr td #btndel
+{
+	width:100px;
+	height:30px;
+	cursor:pointer;
+	background:#E8FFA3;
+	border:1px solid #86B300;
+	text-align:center;
+}
+.mytable tr td #btndel:hover
+{
+	border:2px solid #ACE600;
+}
+.mytable tr td span
+{
+	color:#666;
+	font-size:14px;
+}
+.BackaccraditationLabApp_bottom
+{
+	border:1px solid #EFA125;
+	height:300px;
+	padding:20px;
+	width:680px;
+}
+.BackaccraditationLabApp_bottom legend
+{
+	color:#D18710;
+	font-size:28px;
+}
+#TextArea1
+{
+	background:#FFF;
+	color:#666;
+	font-size:16px;
+	border:#2px solid #666;
+	padding:5px;
+	margin-bottom:10px \9;
+}
+.BackaccraditationLabApp_bottom .btnOK
+{
+	width:71px;
+	height:29px;
+	border:0px;
+	cursor:pointer;
+	background:url("../img/btn_bg.jpg") -342px 0;
+	color:#E89611;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+}
+.BackaccraditationLabApp_bottom p
+{
+	font-size:16px;
+	font-weight:bold;
+	line-height:300%;
+}
+

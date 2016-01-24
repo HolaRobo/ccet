@@ -1,0 +1,5 @@
+H:\CapitalScreening\CapitalScreening\obj\Debug\ResolveAssemblyReference.cache
+H:\CapitalScreening\CapitalScreening\bin\CapitalScreening.dll
+H:\CapitalScreening\CapitalScreening\bin\CapitalScreening.pdb
+H:\CapitalScreening\CapitalScreening\obj\Debug\CapitalScreening.dll
+H:\CapitalScreening\CapitalScreening\obj\Debug\CapitalScreening.pdb

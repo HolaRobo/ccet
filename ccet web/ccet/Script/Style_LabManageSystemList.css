@@ -1,0 +1,12 @@
+﻿.ul_warp
+{
+	margin:20px;
+}
+.ul_warp li
+{
+	height:30px;
+}
+.ul_warp li a
+{
+	font-size:14px;
+}

@@ -1,0 +1,46 @@
+﻿div
+{
+	text-align: center;
+}
+.BackSystemAndSafetyUpd_top
+{
+	height: 50px;
+	font-size: 28px;
+	text-indent: 1em;
+	line-height: 50px;
+}
+.BackSystemAndSafetyUpd_title
+{
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+}
+.BackSystemAndSafetyUpd_title input
+{
+	height: 30px;
+	width: 680px;
+	font-size: 18px;
+	background: #FFF;
+	border: 1px solid #999;
+	line-height: 30px;
+}
+.BackSystemAndSafetyUpd_content .ke-container
+{
+	margin: 0 auto;
+}
+.BackSystemAndSafetyUpd_content .btnCreate
+{
+	width: 80px;
+	height: 31px;
+	background: url("../img/btnbg1.gif");
+	color: #FFF;
+	border: 0;
+	cursor: pointer;
+	text-align: center;
+}
+.BackSystemAndSafetyUpd_content .TextArea
+{
+	width: 740px;
+	height: 500px;
+	margin-top: 10px;
+}

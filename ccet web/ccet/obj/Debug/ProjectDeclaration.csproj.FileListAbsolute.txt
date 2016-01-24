@@ -1,0 +1,10 @@
+H:\ProjectDeclaration\GraduateJob\obj\Debug\ResolveAssemblyReference.cache
+H:\ProjectDeclaration\GraduateJob\bin\ProjectDeclaration.dll
+H:\ProjectDeclaration\GraduateJob\bin\ProjectDeclaration.pdb
+H:\ProjectDeclaration\GraduateJob\obj\Debug\ProjectDeclaration.dll
+H:\ProjectDeclaration\GraduateJob\obj\Debug\ProjectDeclaration.pdb
+H:\ProjectDeclaration\ProjectDeclaration\bin\ProjectDeclaration.dll
+H:\ProjectDeclaration\ProjectDeclaration\bin\ProjectDeclaration.pdb
+H:\ProjectDeclaration\ProjectDeclaration\obj\Debug\ResolveAssemblyReference.cache
+H:\ProjectDeclaration\ProjectDeclaration\obj\Debug\ProjectDeclaration.dll
+H:\ProjectDeclaration\ProjectDeclaration\obj\Debug\ProjectDeclaration.pdb

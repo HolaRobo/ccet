@@ -1,0 +1,10 @@
+H:\NetworkCourse\CapitalScreening\obj\Debug\ResolveAssemblyReference.cache
+H:\NetworkCourse\CapitalScreening\obj\Debug\CapitalScreening.pdb
+H:\NetworkCourse\CapitalScreening\bin\CapitalScreening.dll
+H:\NetworkCourse\CapitalScreening\bin\CapitalScreening.pdb
+H:\NetworkCourse\CapitalScreening\obj\Debug\CapitalScreening.dll
+H:\NetworkCourse\NetworkCourse\obj\Debug\ResolveAssemblyReference.cache
+H:\NetworkCourse\NetworkCourse\bin\NetworkCourse.dll
+H:\NetworkCourse\NetworkCourse\bin\NetworkCourse.pdb
+H:\NetworkCourse\NetworkCourse\obj\Debug\NetworkCourse.dll
+H:\NetworkCourse\NetworkCourse\obj\Debug\NetworkCourse.pdb

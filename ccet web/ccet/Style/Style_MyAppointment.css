@@ -1,0 +1,71 @@
+﻿.top
+{
+width:900px;
+	text-indent:1em;
+	font-size:24px;
+	line-height:36px;
+	height:45px;
+	border-bottom:2px solid #C1DAD7;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+#TextArea1
+{
+	background:#FFF;
+	color:#666;
+	font-size:16px;
+	border:#2px solid #666;
+	padding:5px;
+}
+.MyAppointment_center table
+{
+	width:940px;
+}
+.MyAppointment_center table th
+{/*
+	background:#BFBFBF;
+	height:30px;
+	border:1px solid #CCC;
+	text-indent:2em;*/
+	color: #6D929B;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url("../img/bg_header.jpg") no-repeat;
+}
+.MyAppointment_center table th.nobg 
+{
+	border-left:1px solid #C1DAD7;
+}
+.MyAppointment_center table td
+{  /*
+	padding:5px;
+	border:1px solid #CCC;*/
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+	color: #57777F;
+
+}
+.MyAppointment_center table td.spec {	
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #fff url("../img//bullet1.gif") no-repeat;
+}
+.MyAppointment_center table td .btnMyAppointment
+{
+	border:1px solid #C1DAD7;
+	height:22px;
+	width:44px;
+	text-align:center;
+	cursor:pointer;
+}
+.MyAppointment_center table td .btnMyAppointment:hover
+{
+	border:2px solid #A3C8C4;
+}

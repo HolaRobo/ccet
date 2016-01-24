@@ -1,0 +1,791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A59636DE-63B6-4170-ABBF-16A976911EDB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LabManage</RootNamespace>
+    <AssemblyName>LabManage</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <IncludeIisSettings>true</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DemonstrationCenterDetail.aspx" />
+    <Content Include="DemonstrationCenterList.aspx" />
+    <Content Include="img\afternoon.jpg" />
+    <Content Include="img\fsclass.png" />
+    <Content Include="img\image_afternoon.jpg" />
+    <Content Include="img\image_morning.jpg" />
+    <Content Include="img\image_night.jpg" />
+    <Content Include="img\morning.jpg" />
+    <Content Include="img\night.jpg" />
+    <Content Include="img\submit.png" />
+    <Content Include="img\tfclass.png" />
+    <Content Include="LabOrder.aspx" />
+    <Content Include="Script\Js_MainForm.js" />
+    <Content Include="Script\Js_RegisterForm.js" />
+    <Content Include="Style\Style_Bottom.css" />
+    <Content Include="Style\Style_LabOrder.css" />
+    <Content Include="Style\Style_MainForm.css" />
+    <Content Include="Style\Style_RegisterForm.css" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="Script\jquery-1.4.4.js" />
+    <Content Include="Script\Js_AdminLogin.js" />
+    <Content Include="Style\Style_AdminLogin.css" />
+    <Content Include="UserControl\Bottom_Back.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackAddTeacher.aspx.cs">
+      <DependentUpon>BackAddTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackAddTeacher.aspx.designer.cs">
+      <DependentUpon>BackAddTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackDrviceMaintenance.aspx.cs">
+      <DependentUpon>BackDrviceMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackDrviceMaintenance.aspx.designer.cs">
+      <DependentUpon>BackDrviceMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackSystemAndSafety.aspx.cs">
+      <DependentUpon>BackSystemAndSafety.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackSystemAndSafety.aspx.designer.cs">
+      <DependentUpon>BackSystemAndSafety.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackSystemAndSafetyUpd.aspx.cs">
+      <DependentUpon>BackSystemAndSafetyUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackSystemAndSafetyUpd.aspx.designer.cs">
+      <DependentUpon>BackSystemAndSafetyUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Centerframework.aspx.cs">
+      <DependentUpon>Centerframework.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Centerframework.aspx.designer.cs">
+      <DependentUpon>Centerframework.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CenterframeworkInfo.aspx.cs">
+      <DependentUpon>CenterframeworkInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CenterframeworkInfo.aspx.designer.cs">
+      <DependentUpon>CenterframeworkInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CenterTeam.aspx.cs">
+      <DependentUpon>CenterTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CenterTeam.aspx.designer.cs">
+      <DependentUpon>CenterTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CreateNoticeNews.aspx.cs">
+      <DependentUpon>CreateNoticeNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateNoticeNews.aspx.designer.cs">
+      <DependentUpon>CreateNoticeNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemonstrationCenterDetail.aspx.cs">
+      <DependentUpon>DemonstrationCenterDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemonstrationCenterDetail.aspx.designer.cs">
+      <DependentUpon>DemonstrationCenterDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemonstrationCenterList.aspx.cs">
+      <DependentUpon>DemonstrationCenterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemonstrationCenterList.aspx.designer.cs">
+      <DependentUpon>DemonstrationCenterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LabAppointment.aspx.cs">
+      <DependentUpon>LabAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabAppointment.aspx.designer.cs">
+      <DependentUpon>LabAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabManageSystem.aspx.cs">
+      <DependentUpon>LabManageSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabManageSystem.aspx.designer.cs">
+      <DependentUpon>LabManageSystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabOrder.aspx.cs">
+      <DependentUpon>LabOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabOrder.aspx.designer.cs">
+      <DependentUpon>LabOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveMessage.aspx.cs">
+      <DependentUpon>LeaveMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveMessage.aspx.designer.cs">
+      <DependentUpon>LeaveMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.aspx.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainForm.aspx.designer.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\BackMaster.Master.cs">
+      <DependentUpon>BackMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\BackMaster.Master.designer.cs">
+      <DependentUpon>BackMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ForeGroundMaster.Master.cs">
+      <DependentUpon>ForeGroundMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\ForeGroundMaster.Master.designer.cs">
+      <DependentUpon>ForeGroundMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NewsInfo.aspx.cs">
+      <DependentUpon>NewsInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsInfo.aspx.designer.cs">
+      <DependentUpon>NewsInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsInfoList.aspx.cs">
+      <DependentUpon>NewsInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsInfoList.aspx.designer.cs">
+      <DependentUpon>NewsInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ADOHelp.cs" />
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicPage.aspx.cs">
+      <DependentUpon>PublicPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicPage.aspx.designer.cs">
+      <DependentUpon>PublicPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReplyList.aspx.cs">
+      <DependentUpon>ReplyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReplyList.aspx.designer.cs">
+      <DependentUpon>ReplyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceDown.aspx.cs">
+      <DependentUpon>ResourceDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResourceDown.aspx.designer.cs">
+      <DependentUpon>ResourceDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Bottom_Back.ascx.cs">
+      <DependentUpon>Bottom_Back.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Bottom_Back.ascx.designer.cs">
+      <DependentUpon>Bottom_Back.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucHeader.ascx.cs">
+      <DependentUpon>ucHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucHeader.ascx.designer.cs">
+      <DependentUpon>ucHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BackProjectManage.aspx.cs">
+      <DependentUpon>BackProjectManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackProjectManage.aspx.designer.cs">
+      <DependentUpon>BackProjectManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabManageSystemList.aspx.cs">
+      <DependentUpon>LabManageSystemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabManageSystemList.aspx.designer.cs">
+      <DependentUpon>LabManageSystemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabSafetyInfo.aspx.cs">
+      <DependentUpon>LabSafetyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabSafetyInfo.aspx.designer.cs">
+      <DependentUpon>LabSafetyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabSafetyInfoList.aspx.cs">
+      <DependentUpon>LabSafetyInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabSafetyInfoList.aspx.designer.cs">
+      <DependentUpon>LabSafetyInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrviceMaintenanceList.aspx.cs">
+      <DependentUpon>DrviceMaintenanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrviceMaintenanceList.aspx.designer.cs">
+      <DependentUpon>DrviceMaintenanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabInfoList.aspx.cs">
+      <DependentUpon>LabInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabInfoList.aspx.designer.cs">
+      <DependentUpon>LabInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackNoticeNewsList.aspx.cs">
+      <DependentUpon>BackNoticeNewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackNoticeNewsList.aspx.designer.cs">
+      <DependentUpon>BackNoticeNewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAppointment.aspx.cs">
+      <DependentUpon>MyAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAppointment.aspx.designer.cs">
+      <DependentUpon>MyAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackTeacherAppointment.aspx.cs">
+      <DependentUpon>BackTeacherAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackTeacherAppointment.aspx.designer.cs">
+      <DependentUpon>BackTeacherAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackaccraditationLabApp.aspx.cs">
+      <DependentUpon>BackaccraditationLabApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackaccraditationLabApp.aspx.designer.cs">
+      <DependentUpon>BackaccraditationLabApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackTeacherInfo.aspx.cs">
+      <DependentUpon>BackTeacherInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackTeacherInfo.aspx.designer.cs">
+      <DependentUpon>BackTeacherInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackResourceDown.aspx.cs">
+      <DependentUpon>BackResourceDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackResourceDown.aspx.designer.cs">
+      <DependentUpon>BackResourceDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackPublicPage.aspx.cs">
+      <DependentUpon>BackPublicPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackPublicPage.aspx.designer.cs">
+      <DependentUpon>BackPublicPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackLeaveMessage.aspx.cs">
+      <DependentUpon>BackLeaveMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackLeaveMessage.aspx.designer.cs">
+      <DependentUpon>BackLeaveMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackLabInfo.aspx.cs">
+      <DependentUpon>BackLabInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackLabInfo.aspx.designer.cs">
+      <DependentUpon>BackLabInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackLabTypeInfo.aspx.cs">
+      <DependentUpon>BackLabTypeInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackLabTypeInfo.aspx.designer.cs">
+      <DependentUpon>BackLabTypeInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTeacherPwd.aspx.cs">
+      <DependentUpon>UpdateTeacherPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateTeacherPwd.aspx.designer.cs">
+      <DependentUpon>UpdateTeacherPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackUpdAdminPwd.aspx.cs">
+      <DependentUpon>BackUpdAdminPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackUpdAdminPwd.aspx.designer.cs">
+      <DependentUpon>BackUpdAdminPwd.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Handler1.ashx" />
+    <Content Include="Script\Js_BackMainForm.js" />
+    <Content Include="Style\Style_BackMainForm.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404error.htm" />
+    <Content Include="Script\Js_ucHeader.js" />
+    <Content Include="Style\Style_ForeGroundMaster.css" />
+    <Content Include="Style\Style_ucHeader.css" />
+    <Content Include="UserControl\ucHeader.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BackAddTeacher.aspx" />
+    <Content Include="BackDrviceMaintenance.aspx" />
+    <Content Include="BackSystemAndSafety.aspx" />
+    <Content Include="BackSystemAndSafetyUpd.aspx" />
+    <Content Include="Centerframework.aspx" />
+    <Content Include="CenterframeworkInfo.aspx" />
+    <Content Include="CenterTeam.aspx" />
+    <Content Include="CreateNoticeNews.aspx" />
+    <Content Include="img\btn_bg1.gif" />
+    <Content Include="img\btn_bg2.gif" />
+    <Content Include="img\bullet2.gif" />
+    <Content Include="img\Centerframework.JPG" />
+    <Content Include="img\head.jpg" />
+    <Content Include="img\left1_03.jpg" />
+    <Content Include="img\left1_05.jpg" />
+    <Content Include="img\left1_07.jpg" />
+    <Content Include="img\left2_01.jpg" />
+    <Content Include="img\left2_02.jpg" />
+    <Content Include="img\login_btn00.gif" />
+    <Content Include="img\nv.jpg" />
+    <Content Include="img\nv1.jpg" />
+    <Content Include="img\right_03.jpg" />
+    <Content Include="img\right_b_03.jpg" />
+    <Content Include="img\top.jpg" />
+    <Content Include="img\ubox-text.gif" />
+    <Content Include="kindeditor\kindeditor.js" />
+    <Content Include="kindeditor\plugins\about.html" />
+    <Content Include="kindeditor\plugins\advtable\advtable.html" />
+    <Content Include="kindeditor\plugins\emoticons\0.gif" />
+    <Content Include="kindeditor\plugins\emoticons\1.gif" />
+    <Content Include="kindeditor\plugins\emoticons\10.gif" />
+    <Content Include="kindeditor\plugins\emoticons\100.gif" />
+    <Content Include="kindeditor\plugins\emoticons\101.gif" />
+    <Content Include="kindeditor\plugins\emoticons\102.gif" />
+    <Content Include="kindeditor\plugins\emoticons\103.gif" />
+    <Content Include="kindeditor\plugins\emoticons\104.gif" />
+    <Content Include="kindeditor\plugins\emoticons\105.gif" />
+    <Content Include="kindeditor\plugins\emoticons\106.gif" />
+    <Content Include="kindeditor\plugins\emoticons\107.gif" />
+    <Content Include="kindeditor\plugins\emoticons\108.gif" />
+    <Content Include="kindeditor\plugins\emoticons\109.gif" />
+    <Content Include="kindeditor\plugins\emoticons\11.gif" />
+    <Content Include="kindeditor\plugins\emoticons\110.gif" />
+    <Content Include="kindeditor\plugins\emoticons\111.gif" />
+    <Content Include="kindeditor\plugins\emoticons\112.gif" />
+    <Content Include="kindeditor\plugins\emoticons\113.gif" />
+    <Content Include="kindeditor\plugins\emoticons\114.gif" />
+    <Content Include="kindeditor\plugins\emoticons\115.gif" />
+    <Content Include="kindeditor\plugins\emoticons\116.gif" />
+    <Content Include="kindeditor\plugins\emoticons\117.gif" />
+    <Content Include="kindeditor\plugins\emoticons\118.gif" />
+    <Content Include="kindeditor\plugins\emoticons\119.gif" />
+    <Content Include="kindeditor\plugins\emoticons\12.gif" />
+    <Content Include="kindeditor\plugins\emoticons\120.gif" />
+    <Content Include="kindeditor\plugins\emoticons\121.gif" />
+    <Content Include="kindeditor\plugins\emoticons\122.gif" />
+    <Content Include="kindeditor\plugins\emoticons\123.gif" />
+    <Content Include="kindeditor\plugins\emoticons\124.gif" />
+    <Content Include="kindeditor\plugins\emoticons\125.gif" />
+    <Content Include="kindeditor\plugins\emoticons\126.gif" />
+    <Content Include="kindeditor\plugins\emoticons\127.gif" />
+    <Content Include="kindeditor\plugins\emoticons\128.gif" />
+    <Content Include="kindeditor\plugins\emoticons\129.gif" />
+    <Content Include="kindeditor\plugins\emoticons\13.gif" />
+    <Content Include="kindeditor\plugins\emoticons\130.gif" />
+    <Content Include="kindeditor\plugins\emoticons\131.gif" />
+    <Content Include="kindeditor\plugins\emoticons\132.gif" />
+    <Content Include="kindeditor\plugins\emoticons\133.gif" />
+    <Content Include="kindeditor\plugins\emoticons\134.gif" />
+    <Content Include="kindeditor\plugins\emoticons\14.gif" />
+    <Content Include="kindeditor\plugins\emoticons\15.gif" />
+    <Content Include="kindeditor\plugins\emoticons\16.gif" />
+    <Content Include="kindeditor\plugins\emoticons\17.gif" />
+    <Content Include="kindeditor\plugins\emoticons\18.gif" />
+    <Content Include="kindeditor\plugins\emoticons\19.gif" />
+    <Content Include="kindeditor\plugins\emoticons\2.gif" />
+    <Content Include="kindeditor\plugins\emoticons\20.gif" />
+    <Content Include="kindeditor\plugins\emoticons\21.gif" />
+    <Content Include="kindeditor\plugins\emoticons\22.gif" />
+    <Content Include="kindeditor\plugins\emoticons\23.gif" />
+    <Content Include="kindeditor\plugins\emoticons\24.gif" />
+    <Content Include="kindeditor\plugins\emoticons\25.gif" />
+    <Content Include="kindeditor\plugins\emoticons\26.gif" />
+    <Content Include="kindeditor\plugins\emoticons\27.gif" />
+    <Content Include="kindeditor\plugins\emoticons\28.gif" />
+    <Content Include="kindeditor\plugins\emoticons\29.gif" />
+    <Content Include="kindeditor\plugins\emoticons\3.gif" />
+    <Content Include="kindeditor\plugins\emoticons\30.gif" />
+    <Content Include="kindeditor\plugins\emoticons\31.gif" />
+    <Content Include="kindeditor\plugins\emoticons\32.gif" />
+    <Content Include="kindeditor\plugins\emoticons\33.gif" />
+    <Content Include="kindeditor\plugins\emoticons\34.gif" />
+    <Content Include="kindeditor\plugins\emoticons\35.gif" />
+    <Content Include="kindeditor\plugins\emoticons\36.gif" />
+    <Content Include="kindeditor\plugins\emoticons\37.gif" />
+    <Content Include="kindeditor\plugins\emoticons\38.gif" />
+    <Content Include="kindeditor\plugins\emoticons\39.gif" />
+    <Content Include="kindeditor\plugins\emoticons\4.gif" />
+    <Content Include="kindeditor\plugins\emoticons\40.gif" />
+    <Content Include="kindeditor\plugins\emoticons\41.gif" />
+    <Content Include="kindeditor\plugins\emoticons\42.gif" />
+    <Content Include="kindeditor\plugins\emoticons\43.gif" />
+    <Content Include="kindeditor\plugins\emoticons\44.gif" />
+    <Content Include="kindeditor\plugins\emoticons\45.gif" />
+    <Content Include="kindeditor\plugins\emoticons\46.gif" />
+    <Content Include="kindeditor\plugins\emoticons\47.gif" />
+    <Content Include="kindeditor\plugins\emoticons\48.gif" />
+    <Content Include="kindeditor\plugins\emoticons\49.gif" />
+    <Content Include="kindeditor\plugins\emoticons\5.gif" />
+    <Content Include="kindeditor\plugins\emoticons\50.gif" />
+    <Content Include="kindeditor\plugins\emoticons\51.gif" />
+    <Content Include="kindeditor\plugins\emoticons\52.gif" />
+    <Content Include="kindeditor\plugins\emoticons\53.gif" />
+    <Content Include="kindeditor\plugins\emoticons\54.gif" />
+    <Content Include="kindeditor\plugins\emoticons\55.gif" />
+    <Content Include="kindeditor\plugins\emoticons\56.gif" />
+    <Content Include="kindeditor\plugins\emoticons\57.gif" />
+    <Content Include="kindeditor\plugins\emoticons\58.gif" />
+    <Content Include="kindeditor\plugins\emoticons\59.gif" />
+    <Content Include="kindeditor\plugins\emoticons\6.gif" />
+    <Content Include="kindeditor\plugins\emoticons\60.gif" />
+    <Content Include="kindeditor\plugins\emoticons\61.gif" />
+    <Content Include="kindeditor\plugins\emoticons\62.gif" />
+    <Content Include="kindeditor\plugins\emoticons\63.gif" />
+    <Content Include="kindeditor\plugins\emoticons\64.gif" />
+    <Content Include="kindeditor\plugins\emoticons\65.gif" />
+    <Content Include="kindeditor\plugins\emoticons\66.gif" />
+    <Content Include="kindeditor\plugins\emoticons\67.gif" />
+    <Content Include="kindeditor\plugins\emoticons\68.gif" />
+    <Content Include="kindeditor\plugins\emoticons\69.gif" />
+    <Content Include="kindeditor\plugins\emoticons\7.gif" />
+    <Content Include="kindeditor\plugins\emoticons\70.gif" />
+    <Content Include="kindeditor\plugins\emoticons\71.gif" />
+    <Content Include="kindeditor\plugins\emoticons\72.gif" />
+    <Content Include="kindeditor\plugins\emoticons\73.gif" />
+    <Content Include="kindeditor\plugins\emoticons\74.gif" />
+    <Content Include="kindeditor\plugins\emoticons\75.gif" />
+    <Content Include="kindeditor\plugins\emoticons\76.gif" />
+    <Content Include="kindeditor\plugins\emoticons\77.gif" />
+    <Content Include="kindeditor\plugins\emoticons\78.gif" />
+    <Content Include="kindeditor\plugins\emoticons\79.gif" />
+    <Content Include="kindeditor\plugins\emoticons\8.gif" />
+    <Content Include="kindeditor\plugins\emoticons\80.gif" />
+    <Content Include="kindeditor\plugins\emoticons\81.gif" />
+    <Content Include="kindeditor\plugins\emoticons\82.gif" />
+    <Content Include="kindeditor\plugins\emoticons\83.gif" />
+    <Content Include="kindeditor\plugins\emoticons\84.gif" />
+    <Content Include="kindeditor\plugins\emoticons\85.gif" />
+    <Content Include="kindeditor\plugins\emoticons\86.gif" />
+    <Content Include="kindeditor\plugins\emoticons\87.gif" />
+    <Content Include="kindeditor\plugins\emoticons\88.gif" />
+    <Content Include="kindeditor\plugins\emoticons\89.gif" />
+    <Content Include="kindeditor\plugins\emoticons\9.gif" />
+    <Content Include="kindeditor\plugins\emoticons\90.gif" />
+    <Content Include="kindeditor\plugins\emoticons\91.gif" />
+    <Content Include="kindeditor\plugins\emoticons\92.gif" />
+    <Content Include="kindeditor\plugins\emoticons\93.gif" />
+    <Content Include="kindeditor\plugins\emoticons\94.gif" />
+    <Content Include="kindeditor\plugins\emoticons\95.gif" />
+    <Content Include="kindeditor\plugins\emoticons\96.gif" />
+    <Content Include="kindeditor\plugins\emoticons\97.gif" />
+    <Content Include="kindeditor\plugins\emoticons\98.gif" />
+    <Content Include="kindeditor\plugins\emoticons\99.gif" />
+    <Content Include="kindeditor\plugins\emoticons\qq.gif" />
+    <Content Include="kindeditor\plugins\file_manager\file_manager.css" />
+    <Content Include="kindeditor\plugins\file_manager\file_manager.html" />
+    <Content Include="kindeditor\plugins\file_manager\file_manager.js" />
+    <Content Include="kindeditor\plugins\file_manager\images\file-16.gif" />
+    <Content Include="kindeditor\plugins\file_manager\images\file-64.gif" />
+    <Content Include="kindeditor\plugins\file_manager\images\folder-16.gif" />
+    <Content Include="kindeditor\plugins\file_manager\images\folder-64.gif" />
+    <Content Include="kindeditor\plugins\file_manager\images\go-up.gif" />
+    <Content Include="kindeditor\plugins\flash.html" />
+    <Content Include="kindeditor\plugins\image\image.html" />
+    <Content Include="kindeditor\plugins\image\images\align_left.gif" />
+    <Content Include="kindeditor\plugins\image\images\align_right.gif" />
+    <Content Include="kindeditor\plugins\image\images\align_top.gif" />
+    <Content Include="kindeditor\plugins\image\images\refresh.gif" />
+    <Content Include="kindeditor\plugins\link\link.html" />
+    <Content Include="kindeditor\plugins\media.html" />
+    <Content Include="kindeditor\plugins\plainpaste.html" />
+    <Content Include="kindeditor\plugins\wordpaste.html" />
+    <Content Include="kindeditor\skins\common\blank.gif" />
+    <Content Include="kindeditor\skins\common\editor.css" />
+    <Content Include="kindeditor\skins\common\flash.gif" />
+    <Content Include="kindeditor\skins\common\loading.gif" />
+    <Content Include="kindeditor\skins\common\media.gif" />
+    <Content Include="kindeditor\skins\common\rm.gif" />
+    <Content Include="kindeditor\skins\default.css" />
+    <Content Include="kindeditor\skins\default\default.gif" />
+    <Content Include="LabAppointment.aspx" />
+    <Content Include="LabManageSystem.aspx" />
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="LeaveMessage.aspx" />
+    <Content Include="MainForm.aspx" />
+    <Content Include="Masters\BackMaster.Master" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\config.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\My97DatePicker.htm" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="My97DatePicker\开发包\lang\en.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\开发包\readme.txt" />
+    <Content Include="My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="NewsInfo.aspx" />
+    <Content Include="NewsInfoList.aspx" />
+    <Content Include="PublicPage.aspx" />
+    <Content Include="ReplyList.aspx" />
+    <Content Include="ResourceDown.aspx" />
+    <Content Include="Script\cssforms.js" />
+    <Content Include="Script\funcs.js" />
+    <Content Include="Script\Js_BackaccraditationLabApp.js" />
+    <Content Include="Script\Js_BackAddTeacher.js" />
+    <Content Include="Script\Js_BackMaster.js" />
+    <Content Include="Script\Js_BackResourceDown.js" />
+    <Content Include="Script\Js_BackTeacherInfo.js" />
+    <Content Include="Script\Js_CreateNoticeNews.js" />
+    <Content Include="Script\Js_ExpertAudit.js" />
+    <Content Include="Script\Js_LabAppointment.js" />
+    <Content Include="Script\Js_LeaveMessage.js" />
+    <Content Include="Script\Js_MyAppointment.js" />
+    <Content Include="Script\Js_ProjectApply.js" />
+    <Content Include="Script\Js_MyProjectApply.js" />
+    <Content Include="Script\Js_BackProjectManage.js" />
+    <Content Include="Script\Js_BackNoticeNewsList.js" />
+    <Content Include="Script\Js_BackHelpInfo.js" />
+    <Content Include="Script\Js_ResourceDown.js" />
+    <Content Include="Script\thickbox_plus.js" />
+    <Content Include="Script\Js_UserLogin.js" />
+    <Content Include="Script\Js_BackUserInfo.js" />
+    <Content Include="Script\Js_LabInfoList.js" />
+    <Content Include="Script\Js_BackPublicPage.js" />
+    <Content Include="Script\Js_BackSystemAndSafety.js" />
+    <Content Include="Script\Js_BackSystemAndSafetyUpd.js" />
+    <Content Include="Script\Js_BackDrviceMaintenance.js" />
+    <Content Include="Script\Js_BackLeaveMessage.js" />
+    <Content Include="Script\Js_BackLabInfo.js" />
+    <Content Include="Script\Js_BackLabTypeInfo.js" />
+    <Content Include="Script\Js_UpdateTeacherPwd.js" />
+    <Content Include="Script\Js_BackUpdAdminPwd.js" />
+    <Content Include="Style\Style_BackaccraditationLabApp.css" />
+    <Content Include="Style\css_xunlei.css" />
+    <Content Include="Style\Style_BackAddTeacher.css" />
+    <Content Include="Style\Style_BackMaster.css" />
+    <Content Include="Style\Style_BackNoticeNewsList.css" />
+    <Content Include="Style\Style_BackResourceDown.css" />
+    <Content Include="Style\Style_BackTeacherInfo.css" />
+    <Content Include="Style\Style_CreateNoticeNews.css" />
+    <Content Include="Style\Style_HelpForm.css" />
+    <Content Include="Style\Style_LabAppointment.css" />
+    <Content Include="Style\Style_LabManageSystemList.css" />
+    <Content Include="Style\Style_LeaveMessage.css" />
+    <Content Include="Style\Style_NewsInfo.css" />
+    <Content Include="Style\Style_NewsInfoList.css" />
+    <Content Include="Style\Style_BackProjectManage.css" />
+    <Content Include="Style\Style_BackNoticeInfo.css" />
+    <Content Include="Style\Style_BackUserInfo.css" />
+    <Content Include="Style\Style_ReplyList.css" />
+    <Content Include="Style\Style_ResourceDown.css" />
+    <Content Include="Style\Style_UserLogin.css" />
+    <Content Include="Style\Style_LabInfoList.css" />
+    <Content Include="Style\Style_MyAppointment.css" />
+    <Content Include="Style\Style_BackTeacherAppointment.css" />
+    <Content Include="Style\Style_BackPublicPage.css" />
+    <Content Include="Style\Style_BackSystemAndSafety.css" />
+    <Content Include="Style\Style_BackSystemAndSafetyUpd.css" />
+    <Content Include="Style\Style_BackDrviceMaintenance.css" />
+    <Content Include="Style\Style_BackLeaveMessage.css" />
+    <Content Include="Style\Style_BackLabInfo.css" />
+    <Content Include="Style\Style_BackLabTypeInfo.css" />
+    <Content Include="Style\Style_UpdateTeacherPwd.css" />
+    <Content Include="uploadify\cancel.png" />
+    <Content Include="uploadify\expressInstall.swf" />
+    <Content Include="uploadify\jquery.uploadify.v2.1.0.min.js" />
+    <Content Include="uploadify\myCss.css" />
+    <Content Include="uploadify\swfobject.js" />
+    <Content Include="uploadify\uploadify.css" />
+    <Content Include="uploadify\uploadify.swf" />
+    <Content Include="Masters\ForeGroundMaster.Master" />
+    <Content Include="BackProjectManage.aspx" />
+    <Content Include="UserLogin.aspx" />
+    <Content Include="LabManageSystemList.aspx" />
+    <Content Include="LabSafetyInfo.aspx" />
+    <Content Include="LabSafetyInfoList.aspx" />
+    <Content Include="DrviceMaintenanceList.aspx" />
+    <Content Include="LabInfoList.aspx" />
+    <Content Include="BackNoticeNewsList.aspx" />
+    <Content Include="MyAppointment.aspx" />
+    <Content Include="BackTeacherAppointment.aspx" />
+    <Content Include="BackaccraditationLabApp.aspx" />
+    <Content Include="BackTeacherInfo.aspx" />
+    <Content Include="BackResourceDown.aspx" />
+    <Content Include="BackPublicPage.aspx" />
+    <Content Include="BackLeaveMessage.aspx" />
+    <Content Include="BackLabInfo.aspx" />
+    <Content Include="BackLabTypeInfo.aspx" />
+    <Content Include="UpdateTeacherPwd.aspx" />
+    <Content Include="BackUpdAdminPwd.aspx" />
+    <None Include="img\Thumbs.db" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="uploadify\uploadify.fla" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\" />
+    <Folder Include="ResourceFile\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16583</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

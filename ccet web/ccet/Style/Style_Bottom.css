@@ -1,0 +1,10 @@
+﻿
+ .copyright
+{   
+    height:40px;
+    line-height:150%;/*为了让两行Copyright文字保持一定的距离*/
+    margin:0 auto;
+    text-align:center;
+    color:#999;
+    font-size:12px;
+}

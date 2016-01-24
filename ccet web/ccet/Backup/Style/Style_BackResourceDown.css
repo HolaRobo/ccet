@@ -1,0 +1,132 @@
+﻿.BackResourceDown_Content
+{
+	height: 400px;
+}
+.paginator
+{
+	font: 12px Arial, Helvetica, sans-serif;
+	padding: 10px 20px 10px 0;
+	margin: 0px;
+}
+.paginator a
+{
+	border: solid 1px #ccc;
+	color: #0063dc;
+	cursor: pointer;
+	text-decoration: none;
+}
+.paginator a:visited
+{
+	padding: 1px 6px;
+	border: solid 1px #ddd;
+	background: #fff;
+	text-decoration: none;
+}
+.paginator .cpb
+{
+	border: 1px solid #F50;
+	font-weight: 700;
+	color: #F50;
+	background-color: #ffeee5;
+}
+.paginator a:hover
+{
+	border: solid 1px #F50;
+	color: #f60;
+	text-decoration: none;
+	background: #A5151C;
+}
+.paginator a, .paginator a:visited, .paginator .cpb, .paginator a:hover
+{
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	min-width: 10px;
+	_width: 10px;
+	margin-right: 5px;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: Arial,SimSun;
+	padding: 0 3px;
+}
+.right .right2
+{
+	height: 560px;
+}
+#idMyTable
+{
+	width: 700px;
+}
+table td .btnclass
+{
+	border: 1px solid #f9ddaf;
+	height: 22px;
+	width: 44px;
+	text-align: center;
+	cursor: pointer;
+}
+table tr
+{
+	height: 50px;
+	height: 40px \9;
+}
+table td
+{
+	border-bottom: #CCC solid 1px;
+	padding: 5px;
+}
+table .th_1
+{
+	width: 400px;
+}
+table .th_2
+{
+	width: 140;
+}
+table .th_3
+{
+	width: 150;
+}
+table .th_4
+{
+	width: 150;
+}
+.BackResourceDown_bottom
+{
+	border: 2px dashed #FF9470;
+	height: 100px;
+	width: 700px;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 50px;
+}
+.txtResourceTitle, .txtPath
+{
+	border: 1px #999 solid;
+	width: 300px;
+	height: 22px;
+	color: #666;
+	font-size: 14px;
+	margin-left: 5px;
+	background:#FFF;
+	line-height:22px;
+}
+.div_btn
+{
+	height:30px;
+
+}
+
+.btnSave
+{
+	width: 71px;
+	height: 29px;
+	border: 0px;
+	cursor: pointer;
+	background: url("../img/btn_bg.jpg") -342px 0;
+	color: #D63600;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}

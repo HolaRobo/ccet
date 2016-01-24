@@ -1,0 +1,58 @@
+﻿.foremaster_content
+{
+	text-align:center;
+}
+.mytable
+{
+	background: url("../img/tablebg.gif")  no-repeat;
+	margin:0 auto;
+	border:#E6E6E6 1px solid;
+	border-radius:10px;
+	width:440px;
+}
+
+.mytable  .td_title
+{
+	height:50px;
+}
+.mytable .tb1_tdleft
+{
+	width:120px;
+	text-align:right;
+}
+.mytable input
+{
+	height:27px;
+	width:280px;
+	background:#FFF;
+	border:1px solid #999;
+	line-height:25px;
+	font-size:16px;
+	color:#666;
+}
+
+.mytable .btnregisterbg
+{
+	background: url("../img/btnregisterbg.gif") no-repeat;
+	border:0;
+	cursor:pointer;
+	width:210px;
+	height:51px;
+	font-weight:bold;
+
+}
+.mytable .btnregisterbg_move
+{
+	background-position: 0 -50px;
+}
+
+.mytable .rebtn
+{
+	text-align:center;
+}
+.mytable .sign
+{
+	color:red;
+	width:10px;
+	text-align:left;
+}

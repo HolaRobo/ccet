@@ -1,0 +1,34 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ForeGroundMaster.master.cs"
+    Inherits="LabManage.Masters.ForeGroundMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="uc" TagName="UCHeader" Src="~/UserControl/ucHeader.ascx" %>
+<%@ Register TagPrefix="uc" TagName="UCBottom" Src="~/UserControl/Bottom_Back.ascx" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title></title>
+    <link rel="Stylesheet" href="../Style/Style_ForeGroundMaster.css" />
+
+    <script type="text/javascript" language="javascript" src="../Script/jquery-1.4.4.js"></script>
+
+</head>
+<body>
+<form runat="server">
+    <div class="master_warp">
+          <div class="foremaster_top">
+            <uc:UCHeader ID="UCHeader1" runat="server" />
+            <div class="map"></div>
+        </div>
+        <div class="foremaster_content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div style="clear:both"></div>
+        </div>
+        <div class="foremaster_bottom">
+          
+        </div>
+    </div>
+</form>
+</body>
+</html>
