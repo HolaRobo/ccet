@@ -9,6 +9,32 @@
     <script type="text/javascript" language="javascript" src="Script/Js_UserLogin.js"></script>
     <link rel="Stylesheet" href="/Style/Style_LabManageSystemList.css" />
     <link rel="Stylesheet" href="/Style/Style_ResourceDown.css" />
+    <style>  
+        table.itemPlaceholderContainer {  
+            border:solid 1px #007FFF;  
+            width:402px;  
+        }
+        table.itemPlaceholderContainer0 {  
+            border:solid 1px #007FFF;  
+            width:402px;  
+        }  
+            
+             table th {  
+                color: #284775;  
+                background: #007FFF;  
+                font-weight: normal;  
+                padding: 2px;  
+            }    
+            <%--
+            table tr {  
+                border:solid 1px black;  
+            }  
+            td {  
+                border:groove 1px #ffd800;  
+            } 
+            --%>
+           
+</style>  
     <div class="MainForm_warp">
         <div class="MainForm_top">
 
@@ -50,7 +76,118 @@
 
 
             <div class="divCenter" style="width:402px ; height:543px">
-		
+		            <!--在为sql语句添加参数时和sql语句的参数添加方法相同，另外如果想要获取行的主键需要在控件中绑定DataKeyNames另外在控件中添加SelectedValue属性即可-->  
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:strConnectionString %>" DeleteCommand="DELETE FROM sysusers WHERE (uid=@uid)" InsertCommand="INSERT INTO sysusers(name) VALUES (@name)" SelectCommand="SELECT Newlab.* FROM Newlab" UpdateCommand="UPDATE sysusers SET name = @name where uid=@uid">  
+            <DeleteParameters>  
+                <asp:ControlParameter ControlID="ListView1" Name="id" PropertyName="SelectedValue" />  
+            </DeleteParameters>  
+            <InsertParameters>  
+                <asp:Parameter Name="name" />  
+            </InsertParameters>  
+            <UpdateParameters>  
+                <asp:Parameter Name="name" />  
+                <asp:ControlParameter ControlID="ListView1" Name="id" PropertyName="SelectedValue" />  
+            </UpdateParameters>  
+            </asp:SqlDataSource> 
+
+            <asp:ListView ID="ListView1" runat="server" DataMember="DefaultView" DataSourceID="SqlDataSource1">  
+            <AlternatingItemTemplate>  
+                <tr style="background-color:#2eb9ee;">  
+                   
+                    <td>  
+                        <asp:Label ID="idLabel" runat="server" Text='<%# Eval("Id") %>' />  
+                    </td>  
+                     <td>  
+                        <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("Stage1") %>' />  
+                    </td>  
+                    <td>  
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Stage2") %>' />  
+                    </td> 
+                    <td>  
+                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("Stage3") %>' />  
+                    </td> 
+                    <td>  
+                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("Stage4") %>' />  
+                    </td> 
+                    <td>  
+                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("Stage5") %>' />  
+                    </td>   
+                </tr>  
+            </AlternatingItemTemplate>  
+            <EditItemTemplate>  
+                <tr style="">  
+                    
+                    <td>  
+                        <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("Id") %>' />  
+                    </td>  
+                     <td>  
+                        <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("Stage1") %>' />  
+                    </td>  
+                    <td>  
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Stage2") %>' />  
+                    </td> 
+                    <td>  
+                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("Stage3") %>' />  
+                    </td> 
+                    <td>  
+                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("Stage4") %>' />  
+                    </td> 
+                    <td>  
+                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("Stage5") %>' />  
+                    </td>  
+                </tr>  
+            </EditItemTemplate>  
+          
+            <ItemTemplate>  
+                <tr style="background-color:#d9f140;">  
+                     
+                    <td>  
+                        <asp:Label ID="idLabel" runat="server" Text='<%# Eval("Id") %>' />  
+                    </td>  
+                    <td>  
+                        <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("Stage1") %>' />  
+                    </td>  
+                    <td>  
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Stage2") %>' />  
+                    </td> 
+                    <td>  
+                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("Stage3") %>' />  
+                    </td> 
+                    <td>  
+                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("Stage4") %>' />  
+                    </td> 
+                    <td>  
+                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("Stage5") %>' />  
+                    </td> 
+                </tr>  
+            </ItemTemplate>  
+            <LayoutTemplate>  
+                <table id="itemPlaceholderContainer0" runat="server" cellpadding="0" cellspacing="0">  
+                    <tr runat="server">  
+                        <td runat="server">  
+                            <table id="itemPlaceholderContainer" runat="server" border="0" style="">  
+                                <tr runat="server" style="">  
+                                   
+                                    <th runat="server">机房</th>  
+                                    <th runat="server">上午第一二节</th>  
+                                    <th runat="server">上午第三四节</th> 
+                                    <th runat="server">下午第一二节</th> 
+                                    <th runat="server">下午第三四节</th> 
+                                    <th runat="server">晚上</th> 
+                                </tr>  
+                                <tr id="itemPlaceholder" runat="server">  
+                                </tr>  
+                            </table>  
+                        </td>  
+                    </tr>  
+                    <tr runat="server">  
+                        <td runat="server" style="">  
+                        </td>  
+                    </tr>  
+                </table>  
+  
+            </LayoutTemplate>  
+</asp:ListView>   
 		            <!--div style="border-bottom:1px solid #bbb;border-left:1px solid #bbb;border-right:1px solid #bbb;">
 		           
 		            <div class="title">
@@ -149,20 +286,20 @@
 	        <table >
                 <tbody>
                     <tr>
-                        <th width="27" colspan="3" height="10"></th>
+                        <th width="27" colspan="3" height="10" style="background: #ffffff"></th>
                      </tr>
                      <tr>
-                            <th width="27" style="height: 46px"></th>
-                            <th width="153" style="height: 46px">用户名</th>
+                            <th width="27" style="height: 46px; background: #ffffff" ></th>
+                            <th width="153" style="height: 46px; background: #ffffff">用户名</th>
                             <td width="259" style="height: 46px"><input name="username" id="username" style="BORDER-TOP: rgb(51,153,255) 1px solid; BORDER-RIGHT: rgb(51,153,255) 1px solid; BORDER-BOTTOM: rgb(51,153,255) 1px solid; BORDER-LEFT: rgb(51,153,255) 1px solid; WIDTH: 150px; height:24px; line-height:24px;" type="text"/> </td>
                        </tr>
                        <tr>
-                            <th></th>
-                            <th>密 码</th>
+                            <th style="background: #ffffff"></th>
+                            <th style="background: #ffffff">密 码</th>
                             <td><input name="pass"  id="password" style="BORDER-TOP: rgb(51,153,255) 1px solid; BORDER-RIGHT: rgb(51,153,255) 1px solid; BORDER-BOTTOM: rgb(51,153,255) 1px solid; BORDER-LEFT: rgb(51,153,255) 1px solid; WIDTH: 150px;height:24px; line-height:24px;" type="password" value=""/> </td>
                        </tr>
                        <tr>
-                            <th colspan="2"></th>
+                            <th colspan="2" style="background: #ffffff"></th>
                             <td>
                                 <label>
                                     <input name="identity" type="radio" value="teacher"/>教师    
@@ -177,7 +314,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th colspan="2"></th>
+                            <th colspan="2" style="background: #ffffff"></th>
                             <td><input id="idbtnLogin" type="button" style="background-image: url(img/login_dl.jpg); border-bottom: 0px; border-left: 0px; width: 111px; height: 34px; border-top: 0px; cursor: pointer; border-right: 0px" value=" " /> </td>
                          </tr>
                          <tr>

@@ -7,7 +7,8 @@
     <div class="LabOrder_warp" style="width: 937px; margin-top: 0px;">
         <div class="date" style="margin 2px 200px 20px 200px">
             <h1 style="font-size:200%;color:orangered;margin:0px 400px 0px 200px">预约时间:
-            <input id ="Text_date" name="orderDate" type="text" onClick="WdatePicker()";
+            <input id ="Text_date" name="orderDate" type="text" onClick="WdatePicker()"; />
+            
         </h1>
         </div>
         <div class="LabOeder_top" style="margin:20px 20px 20px 20px">
@@ -31,7 +32,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="Label1" runat="server" BackColor="White" Text="第一机房" Width="60px"></asp:Label>
 &nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" ></asp:TextBox>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="Label2" runat="server" Text="第一机房" Width="60px"></asp:Label>
 &nbsp;&nbsp;

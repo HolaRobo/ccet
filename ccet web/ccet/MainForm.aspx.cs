@@ -29,6 +29,7 @@ namespace LabManage
                 Repeater4.DataSource = ADOHelp.QueryDataTable(@"SELECT Top 5 * FROM [DemonstrationCenter]");
                 Repeater4.DataBind();
             }*/
+           
         }
     }
 }
