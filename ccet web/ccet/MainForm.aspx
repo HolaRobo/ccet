@@ -49,9 +49,9 @@
             
 
 
-            <div class="divCenter" >
+            <div class="divCenter" style="width:402px ; height:543px">
 		
-		            <div style="border-bottom:1px solid #bbb;border-left:1px solid #bbb;border-right:1px solid #bbb;">
+		            <!--div style="border-bottom:1px solid #bbb;border-left:1px solid #bbb;border-right:1px solid #bbb;">
 		           
 		            <div class="title">
                         <img src="img/title_zxdt.jpg" alt="" style="text-align: left"  />
@@ -102,7 +102,7 @@
                         
                             </ul>
                         
-                    </div>
+                    </!--div>
                      
 	
 		   		        
@@ -137,7 +137,7 @@
                             <li><a href="http://cs.tju.edu.cn/" target="_blank">计算机科学与技术学院</a></li>
 			        </ul>
                        </div>
-		        </div>
+		        </div-->
 		    
 	    </div>
 

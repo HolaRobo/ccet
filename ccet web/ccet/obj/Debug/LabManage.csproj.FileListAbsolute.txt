@@ -24,3 +24,9 @@ D:\WorkSpace\WEB\网站\实验中心\实验中心\bin\LabManage.pdb
 D:\WorkSpace\WEB\网站\实验中心\实验中心\obj\Debug\LabManage.csprojResolveAssemblyReference.cache
 D:\WorkSpace\WEB\网站\实验中心\实验中心\obj\Debug\LabManage.dll
 D:\WorkSpace\WEB\网站\实验中心\实验中心\obj\Debug\LabManage.pdb
+D:\WorkSpace\ccet\ccet web\ccet\bin\LabManage.dll.config
+D:\WorkSpace\ccet\ccet web\ccet\bin\LabManage.dll
+D:\WorkSpace\ccet\ccet web\ccet\bin\LabManage.pdb
+D:\WorkSpace\ccet\ccet web\ccet\obj\Debug\LabManage.csprojResolveAssemblyReference.cache
+D:\WorkSpace\ccet\ccet web\ccet\obj\Debug\LabManage.dll
+D:\WorkSpace\ccet\ccet web\ccet\obj\Debug\LabManage.pdb
