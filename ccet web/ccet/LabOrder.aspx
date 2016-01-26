@@ -3,12 +3,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderId="ContentPlaceHolder1" runat="server">
     <!--link rel="Stylesheet" href="Style/Style_LabOrder.css" /-->
-    
+<script type="text/javascript" language="javascript" src="My97DatePicker/WdatePicker.js"></script>    
     <div class="LabOrder_warp" style="width: 937px; margin-top: 0px;">
-        <div class="date" style="margin 0px">
-            预约时间:<input id ="Text" type="text" 
+        <div class="date" style="margin 2px 200px 20px 200px">
+            <h1 style="font-size:200%;color:orangered;margin:0px 400px 0px 200px">预约时间:
+            <input id ="Text_date" name="orderDate" type="text" onClick="WdatePicker()";
+        </h1>
         </div>
-        <div class="LabOeder_top" style="margin:0px 20px 20px 20px">
+        <div class="LabOeder_top" style="margin:20px 20px 20px 20px">
 
         
             <div class="title" style="width: 935px; height: 50px; margin-top: 0px;">

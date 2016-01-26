@@ -24,6 +24,7 @@ namespace LabManage
             string lab = "";
             string stage;
             string time;
+            string order_Time = Request.Form["orderDate"];
             string[] s = new string[36];
             s[1] = TextBox1.Text;
             s[2] = TextBox2.Text;
@@ -226,11 +227,13 @@ namespace LabManage
 
                 if (s[m] != "")
                 {
-                    string sql = "insert into Newlab values('" + lab + "','" + stage + "','" + time + "','" + s[m] + "','" + date + "')";
+                    string sql = "insert into Newlab values('" + lab + "','" + stage + "','" + time + "','" + s[m] + "','" + Convert.ToDateTime
+                        (date) +" ','"+ Convert.ToDateTime(order_Time) +"')";
                     int i = ADOHelp.ExecuteSql_ReturnRow(sql);
                 }
             }
             
         }
+
     }
 }
