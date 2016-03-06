@@ -6,7 +6,7 @@
 <script language="javascript" type="text/javascript">
     //设定栏目的鼠标事件
     function doClick_risingmenu(o) {
-        o.className = "navmenu_on"; var j; var id; var e; for (var i = 1; i <= 7; i++) {
+        o.className = "navmenu_on"; var j; var id; var e; for (var i = 1; i <= 8; i++) {
             id = "risingmenu" + i; j = document.getElementById(id); e = document.getElementById("sub_con" + i); if (id != o.id) { j.className = "navmenu_off"; e.style.display = "none"; } else {
                 e.style.display = "block";
             }
@@ -14,7 +14,7 @@
     }
     //设定栏目的默认选项
     function doView_risingmenu(o, intI, intJ) {
-        o.className = "navmenu_on"; var j; var id; var e; var f; for (var i = 1; i <= 7; i++) {
+        o.className = "navmenu_on"; var j; var id; var e; var f; for (var i = 1; i <= 8; i++) {
             id = "risingmenu" + i; j = document.getElementById(id); e = document.getElementById("sub_con" + i);
             if (id != "risingmenu" + intI) {   //设置一级的样式
                 j.className = "navmenu_off";  //设置二级的不显示
@@ -54,12 +54,13 @@
     }
 #rising_menu #navmenu
 {
-	height: 27px;
+	height: 33px;
 	padding: 0 15px;
 	position: absolute;
-	top: 1px;
+	top: -10px;
 	z-index: 100;
-        left: 0px;
+        left: -3px;
+        right: 131px;
     }
 #navmenu ul
 {
@@ -421,6 +422,7 @@ a:hover
                 <li><span class="navmenu_off" id="risingmenu5" onmouseover="doClick_risingmenu(this);">教学成果</span></li>
                 <li><span class="navmenu_off" id="risingmenu6" onmouseover="doClick_risingmenu(this);">教学资源</span></li>
                 <li><span class="navmenu_off" id="risingmenu7" onmouseover="doClick_risingmenu(this);">机房预约</span></li>
+                <li><span class="navmenu_off" id="risingmenu8" onmouseover="doClick_risingmenu(this);">失物招领</span></li>
             </ul>
         </div>
         <div class="submenu">
@@ -439,6 +441,8 @@ a:hover
                 <a href="ResourceDown.aspx?TypeName=表格资源">资源下载</a></div>
             <div class="none" id="sub_con7">
                 <a href="LabOrder.aspx">预约情况</a></div>
+            <div class="none" id="sub_con8">
+                <a href="LostAndFound_Admin.aspx">管理员管理</a></div>
         </div>
     </div>
 </div>

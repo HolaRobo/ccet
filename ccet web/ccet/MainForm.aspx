@@ -34,7 +34,7 @@
             } 
             --%>
            
-</style>  
+    </style>  
     <div class="MainForm_warp">
         <div class="MainForm_top">
 

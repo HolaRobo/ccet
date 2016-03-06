@@ -77,10 +77,12 @@
     <Content Include="img\submit.png" />
     <Content Include="img\tfclass.png" />
     <Content Include="LabOrder.aspx" />
+    <Content Include="LostAndFound_Admin.aspx" />
     <Content Include="Script\Js_MainForm.js" />
     <Content Include="Script\Js_RegisterForm.js" />
     <Content Include="Style\Style_Bottom.css" />
     <Content Include="Style\Style_LabOrder.css" />
+    <Content Include="Style\Style_LostAndFound_Admin.css" />
     <Content Include="Style\Style_MainForm.css" />
     <Content Include="Style\Style_RegisterForm.css" />
     <Content Include="AdminLogin.aspx" />
@@ -195,6 +197,13 @@
     </Compile>
     <Compile Include="LeaveMessage.aspx.designer.cs">
       <DependentUpon>LeaveMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LostAndFound_Admin.aspx.cs">
+      <DependentUpon>LostAndFound_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LostAndFound_Admin.aspx.designer.cs">
+      <DependentUpon>LostAndFound_Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainForm.aspx.cs">
       <DependentUpon>MainForm.aspx</DependentUpon>
@@ -752,6 +761,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="File\" />
     <Folder Include="images\" />
     <Folder Include="ResourceFile\" />
   </ItemGroup>
