@@ -81,5 +81,16 @@ namespace LabManage
             }
         }
         #endregion
+
+        
+        protected void submitClick(object sender, EventArgs e)
+        {
+            string lostTime = Request.Form["dateInput"];
+            string name = Request.Form["lostName"];
+            string room = Request.Form["roomSelect"];
+            string description = Request.Form["textArea"];
+
+        }
+        
     }
 }

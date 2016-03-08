@@ -1,10 +1,11 @@
-﻿.name{
+﻿
+.name{
     float:left;
     width:900px;
     height:70px;
     position:relative;
     margin-top: 60px;
-    margin-left: 220px;
+
 }
 
 .name input{
@@ -18,13 +19,13 @@
 .lost_loc{ 
     width: 900px;
     
-    border-top:90px;
+    margin-top:60px;
     margin-left: 220px;
 }
 
 .description{
     width: 900px;
-    margin-top:40px;
+    margin-top:0px;
     margin-left:220px;
 }
 
