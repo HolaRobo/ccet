@@ -41,7 +41,7 @@
 
         </div>
 
-        <div class ="dateTime" style="width:900px; margin-left:220px; margin-top:40px;height:30px;">
+        <div class ="dateTime" style="width:900px; margin-left:220px; margin-top:60px;height:80px;">
             <asp:Label ID="dateLabel" Style="" CssClass =" btn-success btn-lg" runat="server" Text="丢失日期"></asp:Label>
             <input id="input2" name="dateInput" style="position:relative; left:134px;top:-29px;width:188px;" type="text" class="form-control" placeholder="选择日期" onClick="WdatePicker()"; />
         </div>

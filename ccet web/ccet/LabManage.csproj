@@ -78,6 +78,7 @@
     <Content Include="img\tfclass.png" />
     <Content Include="LabOrder.aspx" />
     <Content Include="LostAndFound_Admin.aspx" />
+    <Content Include="LostAndFound_List.aspx" />
     <Content Include="Script\Js_MainForm.js" />
     <Content Include="Script\Js_RegisterForm.js" />
     <Content Include="Style\Style_Bottom.css" />
@@ -204,6 +205,13 @@
     </Compile>
     <Compile Include="LostAndFound_Admin.aspx.designer.cs">
       <DependentUpon>LostAndFound_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LostAndFound_List.aspx.cs">
+      <DependentUpon>LostAndFound_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LostAndFound_List.aspx.designer.cs">
+      <DependentUpon>LostAndFound_List.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainForm.aspx.cs">
       <DependentUpon>MainForm.aspx</DependentUpon>
