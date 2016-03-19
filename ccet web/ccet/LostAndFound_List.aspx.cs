@@ -16,11 +16,11 @@ namespace LabManage
             HtmlGenericControl div;
             HtmlGenericControl span;
             TextBox txt;
-            Label label1;
-            Label label2;
-            Label label3;
-            Label label4;
             Image loadPhoto;
+            Button but1;
+            Button but2;
+            Button but3;
+            Button but4;
 
             for(int i = 0; i < 5; i++)
             {
@@ -41,36 +41,38 @@ namespace LabManage
                 loadPhoto = new Image();
                 //loadPhoto.ImageUrl = "./File";
                 loadPhoto.Attributes.CssStyle.Value = "height:120px; width:120px;";
-                
 
-                label1 = new Label();
-                label1.Text = "名称" + i.ToString();
-                label1.CssClass = "";
-                label1.Attributes.CssStyle.Value = "position: relative; left: 20px; top: -55px; height:40px;";
-                //label1.Font.Size = "16"; 
+                but1 = new Button();
+                but1.Text = "名 称";
+                but1.Font.Bold = true;
+                but1.Font.Size = 15;
+                but1.Enabled = false;
+                but1.CssClass = "btn-warning";
+                but1.Attributes.CssStyle.Value = "position: relative; left:20px; top: -44px; text-align:center; height:35px; width: 70px;";
 
-                label2 = new Label();
-                label2.Text = "时间" + i.ToString();
-                label2.CssClass = "";
-                label2.Attributes.CssStyle.Value = "float:left top: -15px; height:40px;";
+                but2 = new Button();
+                but2.Text = "时 间";
+                but2.Font.Bold = true;
+                but2.Font.Size = 15;
+                but2.Enabled = false;
+                but2.CssClass = "btn-secondary";
+                but2.Attributes.CssStyle.Value = "position: relative; left: -80px; top: -5px; text-align:center; height:35px; width: 70px;";
 
-                label3 = new Label();
-                label3.Text = "时间" + i.ToString();
-                label3.CssClass = "";
-                label3.Attributes.CssStyle.Value = "left: -20px; top: 25px; height:40px;";
+                but3 = new Button();
+                but3.Text = "地 点";
+                but3.Font.Bold = true;
+                but3.Font.Size = 15;
+                but3.Enabled = false;
+                but3.CssClass = "btn-secondary";
+                but3.Attributes.CssStyle.Value = "position: relative; left: -80px; top: 35px; text-align:center; height:35px; width: 70px;";
 
-                label4 = new Label();
-                label4.Text = "时间" + i.ToString();
-                label4.CssClass = "";
-                label4.Attributes.CssStyle.Value = "position: relative; left: 20px; top: 65px; height:40px;";
-                
                 //div.Controls.Add(span);
                 //div.Controls.Add(txt);
                 div.Controls.Add(loadPhoto);
-                div.Controls.Add(label1);
-                div.Controls.Add(label2);
-                div.Controls.Add(label3);
-                div.Controls.Add(label4);
+                
+                div.Controls.Add(but1);
+                div.Controls.Add(but2);
+                div.Controls.Add(but3);
                 test1.Controls.Add(div);
             }
         }
