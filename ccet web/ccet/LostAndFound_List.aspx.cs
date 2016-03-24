@@ -47,7 +47,7 @@ namespace LabManage
                 but1.Font.Bold = true;
                 but1.Font.Size = 15;
                 but1.Enabled = false;
-                but1.CssClass = "btn-warning";
+                but1.CssClass = "btn-primary-outline";
                 but1.Attributes.CssStyle.Value = "position: relative; left:20px; top: -44px; text-align:center; height:35px; width: 70px;";
 
                 but2 = new Button();
@@ -56,15 +56,15 @@ namespace LabManage
                 but2.Font.Size = 15;
                 but2.Enabled = false;
                 but2.CssClass = "btn-secondary";
-                but2.Attributes.CssStyle.Value = "position: relative; left: -80px; top: -5px; text-align:center; height:35px; width: 70px;";
+                but2.Attributes.CssStyle.Value = "position: relative; left: -50px; top: -5px; text-align:center; height:35px; width: 70px;";
 
                 but3 = new Button();
                 but3.Text = "地 点";
                 but3.Font.Bold = true;
                 but3.Font.Size = 15;
                 but3.Enabled = false;
-                but3.CssClass = "btn-secondary";
-                but3.Attributes.CssStyle.Value = "position: relative; left: -80px; top: 35px; text-align:center; height:35px; width: 70px;";
+                but3.CssClass = "btn-link";
+                but3.Attributes.CssStyle.Value = "position: relative; left: -120px; top: 35px; text-align:center; height:35px; width: 70px;";
 
                 //div.Controls.Add(span);
                 //div.Controls.Add(txt);
