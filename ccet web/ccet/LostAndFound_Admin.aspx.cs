@@ -91,10 +91,18 @@ namespace LabManage
             string description = Request.Form["textArea"];
             string picName = FileUpload1.FileName;
 
-            string sql = "insert into lostAndFind values('" + name + "','" + room + "','" + lostTime + "','" + description + "','" + picName+ "');";
-            int i = ADOHelp.ExecuteSql_ReturnRow(sql);
+            if (lostTime == "" || name == "")
+            {
 
-            Response.Redirect("LostAndFound_List.aspx");
+            }
+            else
+            {
+
+                string sql = "insert into LostAndFound_Admin values('" + name + "','" + room + "','" + lostTime + "','" + description + "','" + picName + "');";
+                int i = ADOHelp.ExecuteSql_ReturnRow(sql);
+
+                Response.Redirect("LostAndFound_List.aspx");
+            }
         }
         
     }

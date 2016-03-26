@@ -91,7 +91,9 @@
     <Content Include="Script\Js_AdminLogin.js" />
     <Content Include="Style\Style_AdminLogin.css" />
     <Content Include="UserControl\Bottom_Back.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackAddTeacher.aspx.cs">
