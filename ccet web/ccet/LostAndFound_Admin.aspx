@@ -50,7 +50,7 @@
         <div class="description">
 
             <asp:Label ID="desLabel" CssClass="btn-success btn-lg" runat="server" Text="简单描述"></asp:Label>
-            <textarea id="des" name="textArea" type="text" class="form-control" runat="server" placeholder="失物简单描述" wrap="virtual" rows="3" cols="20"></textarea>
+            <textarea ID="des" name="textArea" type="text" class="form-control" runat="server" placeholder="失物简单描述" wrap="virtual" rows="3" cols="20"></textarea>
         </div>
 
         <div class="load_picture">

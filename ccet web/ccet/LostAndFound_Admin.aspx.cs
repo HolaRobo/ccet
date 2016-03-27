@@ -87,8 +87,9 @@ namespace LabManage
         {
             string lostTime = Request.Form["dateInput"];
             string name = Request.Form["lostName"];
-            string room = Request.Form["roomSelect"];
-            string description = Request.Form["textArea"];
+            string room = roomSelect.SelectedItem.Text;
+            //string room = Request.Form["roomSelect"].ToString();
+            string description = this.des.Value;
             string picName = FileUpload1.FileName;
 
             if (lostTime == "" || name == "")
