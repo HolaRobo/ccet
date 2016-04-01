@@ -3,8 +3,8 @@
     float:left;
     width:900px;
     position: relative;
-    height:70px;
-    margin-top: 60px;
+    height:50px;
+    margin-top: 40px;
     margin-left: 220px;
 }
 
@@ -16,17 +16,30 @@
     height:39px;
 }
 
-.lost_loc{ 
+.classification{ 
+    position: relative;
     width: 900px;
-    height: 90px;
-    margin-top:60px;
+    height: 70px;
+    margin-top:105px;
     margin-left: 220px;
 }
 
-.description{
+.lost_loc{
     width: 900px;
     margin-top:0px;
     margin-left:220px;
+}
+
+.dateTime {
+    width: 900px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 220px;
+}
+.description{
+    width: 900px;
+    margin-top: 0px;
+    margin-left: 220px;
 }
 
 .description textarea{
@@ -40,10 +53,25 @@
 .load_picture{
     width: 900px;
     height:400px;
-    margin-top: 70px;
-    margin-left:220px;
+    margin-top: 50px;
+    margin-left:0px;
 }
 
+.load_picture input{
+    margin-left: 200px;
+}
+
+.load_picture span{
+    height: 20px;
+    margin-top:10px;
+    margin-left:350px;
+}
+.load_picture img{
+    margin-top: 20px;
+    margin-left : 300px;
+    height: 300px;
+    width: 350px;
+}
 .submit{
     width: 900px;
     margin-top: 30px;
