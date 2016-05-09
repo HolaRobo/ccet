@@ -84,6 +84,7 @@
     <Content Include="Style\Style_Bottom.css" />
     <Content Include="Style\Style_LabOrder.css" />
     <Content Include="Style\Style_LostAndFound_Admin.css" />
+    <Content Include="Style\Style_LostAndFound_List.css" />
     <Content Include="Style\Style_MainForm.css" />
     <Content Include="Style\Style_RegisterForm.css" />
     <Content Include="AdminLogin.aspx" />

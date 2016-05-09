@@ -1,0 +1,22 @@
+﻿.type {
+    float:left;
+    margin-left:230px;
+    margin-top:30px;
+}
+
+.content {
+    float:left;
+    margin-left:30px;
+    margin-top:90px;
+}
+.room {
+    height: 240px;
+    width: 85px;
+}
+.list {
+    float:left;
+    margin-top:-310px;
+    margin-left:100px;
+    width:800px;
+    height:800px;
+}

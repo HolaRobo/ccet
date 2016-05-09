@@ -11,7 +11,7 @@
     <link rel="Stylesheet" href="Style/Style_LostAndFound_Admin.css" />
     <script type="text/javascript" language="javascript" src="Script/bootstrap.min.js"></script>
     <script type="text/javascript" language="javascript" src="Script/bootstrap.js"></script>
-    <script type="text/javascript" language="javascript" src="Script/npmjs"></script>
+    <script type="text/javascript" language="javascript" src="Script/npm.js"></script>
     <script type="text/javascript" language="javascript" src="My97DatePicker/WdatePicker.js"></script>
 
     <%-- %>div class="LostAndFound_Admin_wrap"--%>
