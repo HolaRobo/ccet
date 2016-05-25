@@ -10,13 +10,13 @@ namespace LabManage
 {
     public partial class LabManageSystem : System.Web.UI.Page
     {
-        int LabManageSystemID = 0;
+        int d_LabManageSystemID = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             try
             {
-                LabManageSystemID = Convert.ToInt32(Request.QueryString["LabManageSystemID"]);
-                DataTable dt = ADOHelp.QueryDataTable("exec proc_SearchLabManageSystem " + LabManageSystemID + "");
+                d_LabManageSystemID = Convert.ToInt32(Request.QueryString["LabManageSystemID"]);
+                DataTable dt = ADOHelp.QueryDataTable("exec proc_SearchLabManageSystem " + d_LabManageSystemID + "");
                 Label1.Text = dt.Rows[0]["LabManageSystemTitle"].ToString();
                 Label2.Text = dt.Rows[0]["LabManageSystemContent"].ToString();
             }

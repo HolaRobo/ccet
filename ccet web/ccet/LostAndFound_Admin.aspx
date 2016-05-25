@@ -13,8 +13,14 @@
     <script type="text/javascript" language="javascript" src="Script/bootstrap.js"></script>
     <script type="text/javascript" language="javascript" src="Script/npm.js"></script>
     <script type="text/javascript" language="javascript" src="My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" language="javascript" src="Script/jquery-1.4.4.js"></script>
+    <script type="text/javascript" language="javascript" src="Script/jquery-1.4a2.min.js"></script>
 
+        
     <%-- %>div class="LostAndFound_Admin_wrap"--%>
+        <%-- %>div class ="change_db">
+            <asp:Button ID="changeButton" name="changebutton2" CssClass="btn-warning btn-lg" style="margin-left:28px; height:43px; margin-top: 5px;" Text="跳转到修改页面" runat="server" onClick="change"  />
+        </--%>
         <div class ="name">
 
             <asp:Label ID="nameLabel" CssClass="btn-success btn-lg" runat="server" Text="失物名称" ForeColor="White"></asp:Label>
@@ -51,7 +57,7 @@
 
         <div class ="dateTime">
             <asp:Label ID="dateLabel" CssClass =" btn-success btn-lg" runat="server" Text="丢失日期"></asp:Label>
-            <input id="input2" name="dateInput" style="position:relative; left:134px;top:-29px;width:188px;" type="text" class="form-control" placeholder="选择日期(不能为空)" onClick="WdatePicker()"; />
+            <input id="input2" name="dateInput" style="position:relative; left:134px;top:-29px;width:188px;" type="text" class="form-control" placeholder="选择日期(不能为空)" onclick="WdatePicker()"; />
         </div>
 
         <div class="description">
@@ -62,15 +68,19 @@
 
         <div class="load_picture">
             
+           
+
             <%-- %>asp:Label ID="msgLabel" CssClass="btn-success btn-lg" Text="可以上传图片" runat="server"></%>
             <asp:FileUpload ID="FileUpload1" CssClass="btn btn-primary-outline btn-lg" runat="server" Style="margin-left:200px; margin-top:-33px;"/>
             <asp:Button ID ="loadButton" CssClass="btn btn-warning btn-lg" Text="上传图片" Style="margin-top:-380px;margin-left:300px;" OnClick="picLoadClick" runat="server" />
             <asp:Label ID="loadLabel" runat="server" Text ="" Style="color:orangered"></asp:Label>
+                <asp:Button ID ="loadButton" CssClass="btn btn-warning btn-lg" Text="上传图片" Style="margin-top:-60px;margin-left:630px;"  runat="server" />
             <asp:Image ID="loadImage" CssClass="inputc" Style="margin-left:100px; margin-top:30px;" Width="300px" Height="300px" runat="server"/--%>
             <asp:FileUpload ID="FileUpload1" name="fileupload" CssClass="btn btn-primary-outline btn-lg" runat="server"/>
-            <asp:Button ID ="loadButton" CssClass="btn btn-warning btn-lg" Text="上传图片" Style="margin-top:-60px;margin-left:630px;" OnClick="picLoadClick" runat="server" />
+            <%-- %>asp:Button ID ="loadButton" CssClass="btn btn-warning btn-lg" Text="上传图片" Style="margin-top:-60px;margin-left:600px;" OnClick="picLoadClick" runat="server" />
+            
+            <asp:Image ID="loadImage" CssClass="inputc"  runat="server"/--%>
             <asp:Label ID="loadLabel" runat="server" Text ="" Style="color:orangered"></asp:Label>
-            <asp:Image ID="loadImage" CssClass="inputc"  runat="server"/>
              
             
         </div>

@@ -442,7 +442,7 @@ a:hover
             <div class="none" id="sub_con7">
                 <a href="LabOrder.aspx">预约情况</a></div>
             <div class="none" id="sub_con8">
-                <a href="LostAndFound_Admin.aspx">管理员管理</a><span class="subline">|</span><a href="LostAndFound_List.aspx">失物列表</a></div>
+                <a href="LostAndFound_Admin.aspx">管理员添加</a><span class="subline">|</span><a href="LostAndFound_Admin2.aspx">管理员修改</a><span class="subline">|</span><a href="LostAndFound_List.aspx">失物列表</a></div>
         </div>
     </div>
 </div>

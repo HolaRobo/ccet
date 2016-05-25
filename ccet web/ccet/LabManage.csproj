@@ -52,6 +52,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -65,6 +66,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\LabManageDB.mdf" />
+    <Content Include="App_Data\LabManageDB_log.ldf">
+      <DependentUpon>LabManageDB.mdf</DependentUpon>
+    </Content>
     <Content Include="DemonstrationCenterDetail.aspx" />
     <Content Include="DemonstrationCenterList.aspx" />
     <Content Include="img\afternoon.jpg" />
@@ -78,7 +83,11 @@
     <Content Include="img\tfclass.png" />
     <Content Include="LabOrder.aspx" />
     <Content Include="LostAndFound_Admin.aspx" />
+    <Content Include="LostAndFound_Admin2.aspx" />
     <Content Include="LostAndFound_List.aspx" />
+    <Content Include="Script\jquery-1.4a2.min.js" />
+    <Content Include="Script\jquery.form.js" />
+    <Content Include="Script\jquery.KinSlideshow-1.2.min.js" />
     <Content Include="Script\Js_MainForm.js" />
     <Content Include="Script\Js_RegisterForm.js" />
     <Content Include="Style\Style_Bottom.css" />
@@ -154,6 +163,14 @@
     <Compile Include="CreateNoticeNews.aspx.designer.cs">
       <DependentUpon>CreateNoticeNews.aspx</DependentUpon>
     </Compile>
+    <Compile Include="db.cs">
+      <DependentUpon>db.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="db.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.dbml</DependentUpon>
+    </Compile>
     <Compile Include="DemonstrationCenterDetail.aspx.cs">
       <DependentUpon>DemonstrationCenterDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -208,6 +225,13 @@
     </Compile>
     <Compile Include="LostAndFound_Admin.aspx.designer.cs">
       <DependentUpon>LostAndFound_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LostAndFound_Admin2.aspx.cs">
+      <DependentUpon>LostAndFound_Admin2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LostAndFound_Admin2.aspx.designer.cs">
+      <DependentUpon>LostAndFound_Admin2.aspx</DependentUpon>
     </Compile>
     <Compile Include="LostAndFound_List.aspx.cs">
       <DependentUpon>LostAndFound_List.aspx</DependentUpon>
@@ -763,6 +787,11 @@
     <Content Include="BackLabTypeInfo.aspx" />
     <Content Include="UpdateTeacherPwd.aspx" />
     <Content Include="BackUpdAdminPwd.aspx" />
+    <Content Include="db.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>db.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="img\Thumbs.db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -771,10 +800,17 @@
     <None Include="uploadify\uploadify.fla" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="File\" />
     <Folder Include="images\" />
     <Folder Include="ResourceFile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db.dbml.layout">
+      <DependentUpon>db.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

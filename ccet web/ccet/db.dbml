@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LabManageDB" Class="dbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=&quot;D:\WorkSpace\ccet\ccet web\ccet\DB_51aspx\LabManageDB.mdf&quot;;Integrated Security=True;Connect Timeout=30" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="LabManageDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AdminInfo" Member="AdminInfo">
+    <Type Name="AdminInfo">
+      <Column Name="AdminID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AdminName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="AdminPwd" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TeacherInfo" Member="TeacherInfo">
+    <Type Name="TeacherInfo">
+      <Column Name="TeacherID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TeacherName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="TeacherPwd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="TeacherInfo_LabAppointment" Member="LabAppointment" ThisKey="TeacherID" OtherKey="TeacherID" Type="LabAppointment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CenterframeworkData" Member="CenterframeworkData">
+    <Type Name="CenterframeworkData">
+      <Column Name="CenterframeworkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CenterframeworkName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CenterframeworkContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DrviceMaintenance" Member="DrviceMaintenance">
+    <Type Name="DrviceMaintenance">
+      <Column Name="DrviceMaintenanceID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DrviceMaintenanceTitle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DrviceMaintenancePath" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LabAppointment" Member="LabAppointment">
+    <Type Name="LabAppointment">
+      <Column Name="AppointmentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LabID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeacherID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeacherLeaveMessage" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AppointmentDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AppSection" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AdminAllow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AdminReason" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="TeacherInfo_LabAppointment" Member="TeacherInfo" ThisKey="TeacherID" OtherKey="TeacherID" Type="TeacherInfo" IsForeignKey="true" />
+      <Association Name="LabInfo_LabAppointment" Member="LabInfo" ThisKey="LabID" OtherKey="LabID" Type="LabInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LabInfo" Member="LabInfo">
+    <Type Name="LabInfo">
+      <Column Name="LabID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LabName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="LabTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaxNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="LabInfo_LabAppointment" Member="LabAppointment" ThisKey="LabID" OtherKey="LabID" Type="LabAppointment" />
+      <Association Name="LabInfo_LabType_LabInfo" Member="LabInfo_LabType" ThisKey="LabTypeID" OtherKey="LabTypeID" Type="LabInfo_LabType" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LabInfo_LabType" Member="LabInfo_LabType">
+    <Type Name="LabInfo_LabType">
+      <Column Name="LabTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LabTypeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LabInfo_LabType_LabInfo" Member="LabInfo" ThisKey="LabTypeID" OtherKey="LabTypeID" Type="LabInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LabManageSystem" Member="LabManageSystem">
+    <Type Name="LabManageSystem">
+      <Column Name="LabManageSystemID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LabManageSystemTitle" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="LabManageSystemContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LabSafetyInfo" Member="LabSafetyInfo">
+    <Type Name="LabSafetyInfo">
+      <Column Name="LabSafetyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LabSafetyTitle" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="LabSafetyContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LeaveMessage" Member="LeaveMessage">
+    <Type Name="LeaveMessage">
+      <Column Name="LeaveMessageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LeaveManName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsTeacher" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LeaveMessageContent" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LeaveTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ReplyContent" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ReplyTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Newlab" Member="Newlab">
+    <Type Name="Newlab">
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Id" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Stage1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Stage2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Stage3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Stage4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Stage5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewsInfo" Member="NewsInfo">
+    <Type Name="NewsInfo">
+      <Column Name="NewsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NewsTitle" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NewsContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PublicTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AdminID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResourceFile" Member="ResourceFile">
+    <Type Name="ResourceFile">
+      <Column Name="FileID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FileTitle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FileTypeName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="FileName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SysSet" Member="SysSet">
+    <Type Name="SysSet">
+      <Column Name="SysID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CenterAbstruct" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CenterTeam" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DevelopPlan" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="StudentResult" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeacherResult" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LostAndFound_Student" Member="LostAndFound_Student">
+    <Type Name="LostAndFound_Student">
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Room" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LostTime" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="FoundTime" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImageName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LostAndFound_Admin" Member="LostAndFound_Admin">
+    <Type Name="LostAndFound_Admin">
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Room" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LostTime" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="AddTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImageName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

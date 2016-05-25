@@ -94,15 +94,6 @@ namespace LabManage {
         protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
         
         /// <summary>
-        /// loadButton 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button loadButton;
-        
-        /// <summary>
         /// loadLabel 控件。
         /// </summary>
         /// <remarks>
@@ -110,15 +101,6 @@ namespace LabManage {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label loadLabel;
-        
-        /// <summary>
-        /// loadImage 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image loadImage;
         
         /// <summary>
         /// subButton 控件。
